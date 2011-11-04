@@ -1,3 +1,9 @@
+# revision 23334
+# category Package
+# catalog-ctan /macros/latex/contrib/mhchem
+# catalog-date 2011-06-05 22:15:19 +0200
+# catalog-license lppl
+# catalog-version 3.11
 Name:		texlive-mhchem
 Version:	3.11
 Release:	1
@@ -45,6 +51,7 @@ these phrases are available in Danish, English, French, German
 %{_texmfdistdir}/tex/latex/mhchem/rsphrase.sty
 %doc %{_texmfdistdir}/doc/latex/mhchem/legal.txt
 %doc %{_texmfdistdir}/doc/latex/mhchem/mhchem.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ these phrases are available in Danish, English, French, German
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
