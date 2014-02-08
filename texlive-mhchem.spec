@@ -6,7 +6,7 @@
 # catalog-version 3.11
 Name:		texlive-mhchem
 Version:	3.11
-Release:	2
+Release:	3
 Summary:	Typeset chemical formulae/equations and Risk and Safety phrases
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mhchem
