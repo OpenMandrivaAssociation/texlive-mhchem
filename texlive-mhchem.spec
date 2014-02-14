@@ -1,16 +1,16 @@
-# revision 31099
+# revision 32850
 # category Package
 # catalog-ctan /macros/latex/contrib/mhchem
-# catalog-date 2013-07-05 08:39:35 +0200
-# catalog-license lppl
+# catalog-date 2014-02-02 01:18:28 +0100
+# catalog-license lppl1.3
 # catalog-version undef
 Name:		texlive-mhchem
-Version:	20130705
-Release:	5
+Version:	20140202
+Release:	1
 Summary:	Typeset chemical formulae/equations and Risk and Safety phrases
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mhchem
-License:	LPPL
+License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mhchem.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mhchem.doc.tar.xz
 BuildArch:	noarch
