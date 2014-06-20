@@ -1,12 +1,12 @@
-# revision 32850
+# revision 33314
 # category Package
 # catalog-ctan /macros/latex/contrib/mhchem
-# catalog-date 2014-02-02 01:18:28 +0100
+# catalog-date 2014-03-28 07:32:42 +0100
 # catalog-license lppl1.3
 # catalog-version undef
 Name:		texlive-mhchem
-Version:	20140202
-Release:	2
+Version:	20140328
+Release:	1
 Summary:	Typeset chemical formulae/equations and Risk and Safety phrases
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mhchem
@@ -25,7 +25,8 @@ equations. The hpstatement package provides commands for the
 official hazard statements and precautionary statements (H and
 P statements) that are used to label chemicals. The rsphrase
 package provides commands for the official Risk and Safety (R
-and S) Phrases that are used to label chemicals.
+and S) Phrases that are used to label chemicals. The package
+requires the expl3 bundle.
 
 %post
     %{_sbindir}/texlive.post
