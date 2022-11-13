@@ -1,18 +1,12 @@
-# revision 33314
-# category Package
-# catalog-ctan /macros/latex/contrib/mhchem
-# catalog-date 2014-03-28 07:32:42 +0100
-# catalog-license lppl1.3
-# catalog-version undef
 Name:		texlive-mhchem
-Version:	20190228
+Version:	61456
 Release:	1
 Summary:	Typeset chemical formulae/equations and Risk and Safety phrases
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mhchem
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mhchem.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mhchem.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mhchem.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mhchem.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,27 +23,21 @@ and S) Phrases that are used to label chemicals. The package
 requires the expl3 bundle.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/mhchem/hpstatement.sty
-%{_texmfdistdir}/tex/latex/mhchem/mhchem.sty
-%{_texmfdistdir}/tex/latex/mhchem/rsphrase.sty
-%doc %{_texmfdistdir}/doc/latex/mhchem/README
-%doc %{_texmfdistdir}/doc/latex/mhchem/lppl-1-3c.txt
-%doc %{_texmfdistdir}/doc/latex/mhchem/manifest.txt
-%doc %{_texmfdistdir}/doc/latex/mhchem/mhchem.pdf
-%doc %{_texmfdistdir}/doc/latex/mhchem/mhchem.tex
+%{_texmfdistdir}/tex/latex/mhchem
+%doc %{_texmfdistdir}/doc/latex/mhchem
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
