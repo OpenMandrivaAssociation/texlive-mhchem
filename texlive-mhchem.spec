@@ -3,7 +3,7 @@ Version:	69639
 Release:	1
 Summary:	Typeset chemical formulae/equations and Risk and Safety phrases
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mhchem
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/mhchem
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mhchem.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mhchem.doc.r%{version}.tar.xz
